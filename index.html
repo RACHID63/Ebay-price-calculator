@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <link rel="stylesheet" href="freelanceMoney.css"
+    
+  
+ </head>
+  
+  <header>
+    <h1>Ebay bénéfice calculator</h1>
+  </header>
+  
+  <body id="background">
+    
+    <!-- Monpremier block  ici les prix -->
+    <form class="formCalcul shado" id="FormCalculGain" >
+      <div class="sectionCalcul pricing">
+        
+        <fieldset class="form-container shado2">
+          <legend>Vos tarifs achat vente</legend>
+          
+          <div class="form-field">
+            <label>Achat</label>
+            <div class="infoBulle0">
+              article vendu €
+            </div >
+            <input  name="prixAchat" type="number" placeholder="Ex:70" />
+          </div>
+    
+          <div class="form-field">
+            <label>Vendu</label>
+            <div class="infoBulle0">
+              article vendu €
+            </div >
+            <input name="PrixVendu" type="number" placeholder="Ex:200" />
+          </div>
+
+          
+        </fieldset>
+      </div>
+      <!-- Mon 2em block -->
+      <div class="sectionCalcul pricing">
+        
+        <fieldset class="form-container shado2">
+          <legend>Vos quantitée et expédition</legend>
+
+          <div class="form-field">
+            <label>Quantitée vendu</label>
+            <div class="infoBulle0">
+              Nombre d'article
+            </div >
+            <input name="qteVendu" type="number" placeholder="Ex:1" />
+          </div>
+          
+          <div class="form-field">
+            <label>exp. vendeur €</label>
+            <div class="infoBulle0">
+              expédition payé par le vendeur
+            </div >
+            <input name="TexVendeur" type="number" placeholder="Ex:200" />
+          </div>
+
+          <div class="form-field">
+            <label>exp. acheteur €</label>
+            <div class="infoBulle0">
+              expédition payé par l'acheteur
+            </div >
+            <input name="TexAcheteur" type="number" placeholder="Ex:200" />
+          </div>
+        
+        </fieldset>
+      </div>
+      <!-- mon 3em block -->
+      <div class="sectionCalcul pricing">
+        
+        <fieldset class="form-container charges" id="taxes">
+          <legend >Charges</legend>
+          <div class="comVente">
+            <label id="ChargeMarket">Commition/vente</label>
+            <input name="chargesCommissionPrixFinal" type="number" id="comPrix" placeholder="Ex:0.35" />
+          </div>
+          <div class="comVente">
+            <label id="ChargeMarket">Charge/Market place</label>
+            <div class="infoBulle0">
+              Charge/Market place
+            </div >
+            <div class="comVente" >
+
+              <input name="chargesMark" type="number" id="chMaketPpace" placeholder="Ex:9%" />
+
+            </div>
+            
+          </div>
+
+          <p><input class="buttonRadio" type="radio" name="chargesUrssaf" value="5.5"><span>charge 5,50%  Autre</span> </p>
+          <p><input class="buttonRadio" type="radio" name="chargesUrssaf" value="12.80"> <span>charge 12,80%  Vente de marchandises</span> </p>
+          <p><input class="buttonRadio" type="radio" name="chargesUrssaf" value="22"><span>charge 22%  Vente de services</span></p>
+          
+        </fieldset>
+      </div>
+      
+      <div class="sectionCalcul validation">
+        <button onclick="CalculGain()" type="button" class="Green3D">Calculer</button>
+      </div>
+      
+      <fieldset class="sectionCalcul result shado1 " >
+        <legend>Vos résultat</legend>
+        
+        <div class="form-field1" id="colorRed">
+          
+          <p id="textColorResultaBrut">Brut </p>
+          <span id="resultaBrut">0€</span>
+        </div>
+        <div class="form-field2" id="colorRed">
+          <p id="textColorAdeduire">Taxes </p>
+          <span id="Adeduire">0€</span>
+        </div>
+        
+        <div class="form-field3" id="colorRed">
+          <p id="textColorResultaNet">Bénéfice net</p>
+          <span id="resultaNet"> 0€</span>
+        </div>
+        
+      </fieldset>
+      </div>
+      
+    </form>
+
+    <script src="freelanceMoney.js"></script>
+  </body>
+</html>

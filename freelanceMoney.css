@@ -1,0 +1,401 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  color: #8d2514;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  color: #8d2514;
+
+  font-size: 50px;
+}
+
+.infoBulle0 {
+  transform: scale(0);
+  position: absolute;
+  background-color: #feec85;
+  color: black;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: -40px;
+  box-shadow: 1.5px 1.5px 0 0.5 rgb(6, 115, 29);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  transition: 1s;
+}
+.infoBulle0::before {
+  content: "";
+  position: absolute;
+
+  /* <--triangle */
+  border-top: 15px solid #feec85;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  /* <--position triangle */
+  /* margin-top: 30px; */
+  /* margin-right: 5px; */
+}
+
+.form-field:hover > .infoBulle0 {
+  transform: scale(1);
+}
+
+label {
+  color: #740726;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+#ChargeMarket {
+  margin-bottom: -20px;
+}
+
+#background {
+  display: flex;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23FF85E1'/%3E%3Cstop offset='1' stop-color='%23ee5522'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23f76d82'/%3E%3Cstop offset='1' stop-color='%23ee5522'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg %3E%3Cg transform='translate(0 825)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.43' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  align-content: center;
+  margin-top: 30p;
+  background-size: cover;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-container.shado2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(images/marbre.jpg);
+  border: solid 2px;
+  border-radius: 15px;
+  border-block-color: #f4645c;
+  border-block-start-color: rgb(244, 100, 92);
+  border-block-end-color: rgb(244, 100, 92);
+  border-block-color: #f4645c;
+  border-block-start-color: rgb(244, 100, 92);
+  border-left-color: rgb(244, 100, 92);
+  border-right-color: rgb(244, 100, 92);
+
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 2px 2px 40px 2px #f36563;
+}
+
+.tax {
+  width: 250px;
+  display: flex;
+  align-content: center;
+}
+
+.formCalcul.shado {
+  display: flex;
+  background-image: url(images/marbre.jpg);
+  width: 100%;
+  border: solid 3px;
+  border-radius: 25px;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-color: #f36962;
+  border-top-color: rgb(243, 105, 98);
+  border-right-color: rgb(243, 105, 98);
+  border-bottom-color: rgb(243, 105, 98);
+  border-left-color: rgb(243, 105, 98);
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 1px 1px 350px 1px #e9e0e5;
+}
+
+@media (min-width: 650px) {
+  .formCalcul.shado {
+    width: 600px;
+  }
+
+  .form-container.shado2 {
+    flex-direction: row;
+  }
+}
+
+legend {
+  font-size: 25px;
+  color: #ae0a0f;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 50px;
+  border-color: #fb8fa0;
+  background: transparent;
+  position: relative;
+  transition: all 0.2s;
+  overflow: hidden;
+  color: rgb(220 21 15);
+  border-radius: 30px;
+  box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5),
+    0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+}
+
+button::after {
+  content: "";
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.multi-repeating-linear {
+  background: repeating-linear-gradient(
+      190deg,
+      rgba(255, 0, 0, 0.5) 40px,
+      rgba(255, 153, 0, 0.5) 80px,
+      rgba(255, 255, 0, 0.5) 120px,
+      rgba(0, 255, 0, 0.5) 160px,
+      rgba(0, 0, 255, 0.5) 200px,
+      rgba(75, 0, 130, 0.5) 240px,
+      rgba(238, 130, 238, 0.5) 280px,
+      rgba(255, 0, 0, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      -190deg,
+      rgba(255, 0, 0, 0.5) 30px,
+      rgba(255, 153, 0, 0.5) 60px,
+      rgba(255, 255, 0, 0.5) 90px,
+      rgba(0, 255, 0, 0.5) 120px,
+      rgba(0, 0, 255, 0.5) 150px,
+      rgba(75, 0, 130, 0.5) 180px,
+      rgba(238, 130, 238, 0.5) 210px,
+      rgba(255, 0, 0, 0.5) 230px
+    ),
+    repeating-linear-gradient(
+      23deg,
+      red 50px,
+      orange 100px,
+      yellow 150px,
+      green 200px,
+      blue 250px,
+      indigo 300px,
+      violet 350px,
+      red 370px
+    );
+}
+
+button:hover::after {
+  transform: rotate(150deg);
+}
+
+button:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0px rgb(216 111 110),
+    -10px 10px 25px 0px rgb(243 102 101);
+}
+
+#text {
+  vertical-align: auto;
+  font-size: 50px;
+  font-family: Georgia;
+  color: #953e3c;
+  font-weight: bold;
+  text-decoration: overlineline-through;
+  text-shadow: 0 0 20px #fefcc9, 10px - 10px 30px #feec85,
+    -20px - 20px 40px #ffae34, 20px - 40px 50px #ec760c,
+    -20px - 60px 60px #cd4606, 0 - 80px 70px #973716, 10px - 90px 80px #451b0e;
+  text-align: center;
+  line-height: 250px;
+  margin-top: 50px;
+}
+
+.form-field {
+  width: 3px;
+}
+
+input {
+  border-color: rgb(243, 105, 98);
+  border-radius: 5px;
+  width: 80px;
+  height: 18px;
+  margin-left: 3px;
+}
+
+#comPrix {
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 2px;
+}
+
+#chMaketPpace {
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.comVente {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.sectionCalcul.pricing {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sectionCalcul.result.shado1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 2px 2px 40px 2px #f36563;
+}
+
+.sectionCalcul {
+  margin-bottom: 5px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.form-container.charge.span {
+  font-size: 20px;
+  width: 400px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+
+#colorblue {
+  text-emphasis-color: blue;
+}
+
+.sectionCalcul.result {
+  margin-bottom: 20px;
+  border-color: rgb(255, 242, 0);
+  background-image: url(images/marbre.jpg);
+}
+
+#colorRed {
+  color: red;
+  border-color: red;
+  border-top-color: red;
+  border-right-color: red;
+  border-bottom-color: red;
+  border-left-color: red;
+}
+
+#colorBleu {
+  color: rgb(106, 0, 255);
+  border-color: blue;
+  border-top-color: blue;
+  border-right-color: blue;
+  border-bottom-color: blue;
+  border-left-color: blue;
+}
+
+#colorGreen {
+  color: rgb(6, 115, 29);
+  border-color: green;
+  border-top-color: green;
+  border-right-color: green;
+  border-bottom-color: green;
+  border-left-color: green;
+}
+
+.radio {
+  width: 20px;
+  height: 15;
+}
+
+.résultaNet {
+  font-size: 20px;
+  height: 25px;
+  color: green;
+}
+
+.Tax {
+  border-radius: 8px;
+  font-size: 20px;
+  height: 25px;
+  color: red;
+}
+
+.form-container {
+  border-radius: 8px;
+}
+
+.résultaBrut {
+  font-size: 20px;
+  height: 25px;
+  color: #ae0a0f;
+}
+
+.buttonRadio {
+  width: 75px;
+  height: 12px;
+}
+
+p {
+  font-size: 20px;
+  text-align: left;
+}
+
+#resultaBrut {
+  color: blue;
+  border: solid 3px;
+  margin: 5px;
+  padding: 10px;
+}
+
+#resultaNet {
+  color: green;
+  border: solid 3px;
+  margin: 5px;
+  padding: 10px;
+}
+
+#Adeduire {
+  color: rgb(116, 8, 30);
+  border: solid 3px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.form-field {
+  text-align: center;
+}
+
+#textColorResultaBrut {
+  text-align: center;
+  color: blue;
+}
+
+#textColorAdeduire {
+  text-align: center;
+  color: rgb(116, 8, 30);
+}
+
+#textColorResultaNet {
+  text-align: center;
+  color: green;
+}
