@@ -30,7 +30,7 @@
             <div class="infoBulle0">
               article vendu €
             </div >
-            <input  name="prixAchat" type="number" placeholder="Ex:70" />
+            <input class="form-control" name="prixAchat" type="number" placeholder="Ex:70" />
           </div>
     
           <div class="form-field">
@@ -38,7 +38,7 @@
             <div class="infoBulle0">
               article vendu €
             </div >
-            <input name="PrixVendu" type="number" placeholder="Ex:200" />
+            <input class="form-control" name="PrixVendu" type="number" placeholder="Ex:200" />
           </div>
 
           
@@ -55,23 +55,23 @@
             <div class="infoBulle0">
               Nombre d'article
             </div >
-            <input name="qteVendu" type="number" placeholder="Ex:1" />
+            <input class="form-control" name="qteVendu" type="number" placeholder="Ex:1" />
           </div>
           
           <div class="form-field">
-            <label>exp. vendeur €</label>
+            <label>expédition du vendeur €</label>
             <div class="infoBulle0">
               expédition payé par le vendeur
             </div >
-            <input name="TexVendeur" type="number" placeholder="Ex:200" />
+            <input class="form-control" name="TexVendeur" type="number" placeholder="Ex:200" />
           </div>
 
           <div class="form-field">
-            <label>exp. acheteur €</label>
+            <label>expédution par l'acheteur €</label>
             <div class="infoBulle0">
               expédition payé par l'acheteur
             </div >
-            <input name="TexAcheteur" type="number" placeholder="Ex:200" />
+            <input class="form-control" name="TexAcheteur" type="number" placeholder="Ex:200" />
           </div>
         
         </fieldset>
@@ -80,24 +80,26 @@
       <div class="sectionCalcul pricing">
         
         <fieldset class="form-container charges" id="taxes">
+          
           <legend >Charges</legend>
-          <div class="comVente">
-            <label id="ChargeMarket">Commition/vente</label>
-            <input name="chargesCommissionPrixFinal" type="number" id="comPrix" placeholder="Ex:0.35" />
-          </div>
-          <div class="comVente">
-            <label id="ChargeMarket">Charge/Market place</label>
-            <div class="infoBulle0">
-              Charge/Market place
-            </div >
-            <div class="comVente" >
-
-              <input name="chargesMark" type="number" id="chMaketPpace" placeholder="Ex:9%" />
-
+          <div class="totalCharge" >
+            <div class="comVente">
+              <label id="ChargeMarket">Commition de vente</label>
+              <input class="form-control" name="chargesCommissionPrixFinal" type="number" id="comPrix" placeholder="Ex:0.35" />
             </div>
-            
+            <div class="comVente">
+              <label id="ChargeMarket">Charge de Market place</label>
+              <div class="infoBulle0">
+                Charge/Market place
+              </div >
+              <div class="comVente" >
+                <input class="form-control" name="chargesMark" type="number" id="chMaketPpace" placeholder="Ex:9%" />
+              </div>
+              
+            </div>
+  
           </div>
-
+         
           <p><input class="buttonRadio" type="radio" name="chargesUrssaf" value="5.5"><span>charge 5,50%  Autre</span> </p>
           <p><input class="buttonRadio" type="radio" name="chargesUrssaf" value="12.80"> <span>charge 12,80%  Vente de marchandises</span> </p>
           <p><input class="buttonRadio" type="radio" name="chargesUrssaf" value="22"><span>charge 22%  Vente de services</span></p>
@@ -106,7 +108,7 @@
       </div>
       
       <div class="sectionCalcul validation">
-        <button onclick="CalculGain()" type="button" class="Green3D">Calculer</button>
+        <button id="buttonValidation" type="button" class="Green3D">Calculer</button>
       </div>
       
       <fieldset class="sectionCalcul result shado1 " >

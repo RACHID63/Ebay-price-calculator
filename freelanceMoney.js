@@ -46,3 +46,18 @@ function CalculGain() {
     chargeADeduire.toFixed(2) + "€";
   document.getElementById("resultaNet").innerText = totalNet.toFixed(2) + "€";
 }
+
+//Ajout des évènements
+let btn = document.getElementById("buttonValidation");
+btn.addEventListener("click", CalculGain);
+
+let mesInputs = document.querySelectorAll(
+  " input.form-control, input.buttonRadio   "
+);
+
+mesInputs.forEach((monInput) => {
+  monInput.addEventListener("keyup", CalculGain);
+  monInput.addEventListener("change", CalculGain);
+});
+CalculGain();
+

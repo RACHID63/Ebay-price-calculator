@@ -399,3 +399,12 @@ p {
   text-align: center;
   color: green;
 }
+
+.totalCharge {
+  width: 500px;
+  border: solid 1px rgb(37, 3, 115);
+}
+
+#chMaketPpace {
+  margin-bottom: 5px;
+}
