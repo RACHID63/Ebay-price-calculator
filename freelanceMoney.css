@@ -55,6 +55,7 @@ label {
 
 #ChargeMarket {
   margin-bottom: -20px;
+  margin-left: auto;
 }
 
 #background {
@@ -231,7 +232,7 @@ input {
 }
 
 #comPrix {
-  margin-left: auto;
+  margin-left: 20px;
   margin-top: 25px;
   margin-bottom: 2px;
 }
@@ -407,4 +408,5 @@ p {
 
 #chMaketPpace {
   margin-bottom: 5px;
+  margin-left: auto;
 }
