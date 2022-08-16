@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="freelanceMoney.css"
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-  <link rel="stylesheet" href="freelanceMoney.css"
-    
-  
  </head>
-  
+
   <header>
     <h1>Ebay bénéfice calculator</h1>
   </header>
@@ -26,19 +24,22 @@
           <legend>Vos tarifs achat vente</legend>
           
           <div class="form-field">
-            <label>Achat</label>
-            <div class="infoBulle0">
-              article vendu €
-            </div >
-            <input class="form-control" name="prixAchat" type="number" placeholder="Ex:70" />
-          </div>
-    
+            <div class="packdonnées">
+              <label>Achat</label>
+              <div class="infoBulle0">
+                article vendu €
+              </div >
+              <input class="form-control" name="prixAchat" type="number" placeholder="Ex:70" />
+            </div>
+            </div>
           <div class="form-field">
-            <label>Vendu</label>
-            <div class="infoBulle0">
-              article vendu €
-            </div >
-            <input class="form-control" name="PrixVendu" type="number" placeholder="Ex:200" />
+            <div class="packdonnées">
+              <label>Vendu</label>
+              <div class="infoBulle0">
+                article vendu €
+              </div >
+              <input class="form-control" name="PrixVendu" type="number" placeholder="Ex:200" />
+            </div>
           </div>
 
           
@@ -48,39 +49,41 @@
       <div class="sectionCalcul pricing">
         
         <fieldset class="form-container shado2">
-          <legend>Vos quantitée et expédition</legend>
+          <legend>Vos quantitées et expédition</legend>
+          <div class="form-field">
+            <div class="packdonnées">
+              <label>Quantitée vendu</label>
+              <div class="infoBulle0">
+                Nombre d'article
+              </div >
+              <input class="form-control" name="qteVendu" type="number" placeholder="Ex:1" />
+            </div>
+            </div>
+          <div class="form-field">
+            <div class="packdonnées">
+              <label>expédition vendeur €</label>
+              <div class="infoBulle0">
+                expédition payé par le vendeur
+              </div >
+              <input class="form-control" name="TexVendeur" type="number" placeholder="Ex:200" />
+            </div>
+          </div>
 
           <div class="form-field">
-            <label>Quantitée vendu</label>
-            <div class="infoBulle0">
-              Nombre d'article
-            </div >
-            <input class="form-control" name="qteVendu" type="number" placeholder="Ex:1" />
-          </div>
-          
-          <div class="form-field">
-            <label>expédition du vendeur €</label>
-            <div class="infoBulle0">
-              expédition payé par le vendeur
-            </div >
-            <input class="form-control" name="TexVendeur" type="number" placeholder="Ex:200" />
-          </div>
-
-          <div class="form-field">
-            <label>expédution par l'acheteur €</label>
-            <div class="infoBulle0">
-              expédition payé par l'acheteur
-            </div >
-            <input class="form-control" name="TexAcheteur" type="number" placeholder="Ex:200" />
+            <div class="packdonnées">
+              <label>expédution acheteur €</label>
+              <div class="infoBulle0">
+                expédition payé par l'acheteur
+              </div >
+              <input class="form-control" name="TexAcheteur" type="number" placeholder="Ex:200" />
+            </div>
           </div>
         
         </fieldset>
       </div>
       <!-- mon 3em block -->
       <div class="sectionCalcul pricing">
-        
-        <fieldset class="form-container charges" id="taxes">
-          
+        <fieldset class="form-container charges" id="taxes"> 
           <legend >Charges</legend>
           <div class="totalCharge" >
             <div class="comVente">
@@ -112,19 +115,19 @@
       </div>
       
       <fieldset class="sectionCalcul result shado1 " >
-        <legend>Vos résultat</legend>
+        <legend>Vos résultats</legend>
         
-        <div class="form-field1" id="colorRed">
+        <div class="form-field" id="colorRed">
           
           <p id="textColorResultaBrut">Brut </p>
           <span id="resultaBrut">0€</span>
         </div>
-        <div class="form-field2" id="colorRed">
+        <div class="form-field" id="colorRed">
           <p id="textColorAdeduire">Taxes </p>
           <span id="Adeduire">0€</span>
         </div>
         
-        <div class="form-field3" id="colorRed">
+        <div class="form-field" id="colorRed">
           <p id="textColorResultaNet">Bénéfice net</p>
           <span id="resultaNet"> 0€</span>
         </div>
@@ -135,5 +138,40 @@
     </form>
 
     <script src="freelanceMoney.js"></script>
+
+    <footer>
+      <div class="wrapper">
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+           </div>
+           <span>Facebook</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-twitter"></i>
+           </div>
+           <span>Twitter</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-instagram"></i>
+           </div>
+           <span>Instagram</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-codepen"></i>
+           </div>
+           <span>Codepen</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-youtube"></i>
+           </div>
+           <span>YouTube</span>
+        </div>
+     </div>
+    </footer>
   </body>
 </html>
