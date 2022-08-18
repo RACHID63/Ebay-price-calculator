@@ -28,6 +28,18 @@ header::before {
   align-content: space-around;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(77, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+
+  background-color: #1da1f2;
+  box-shadow: 0 -100vh 0 100vh #1da1f2 ;
+
+}
+
 h1 {
   color: #8d2514;
 
@@ -267,37 +279,31 @@ input {
   height: 30px;
   margin-left: 3px;
 }
-
 #comPrix {
   margin-left: 20px;
   margin-top: 25px;
   margin-bottom: 2px;
 }
-
 #chMaketPpace {
   margin-left: 20px;
   margin-top: 25px;
 }
-
 .comVente {
   display: flex;
   align-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 .sectionCalcul.pricing {
   font-size: 18px;
   margin-top: 25px;
 }
-
 .form-field {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .sectionCalcul.result.shado1 {
   height: 180px;
   display: flex;
@@ -307,7 +313,6 @@ input {
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 2px 2px 40px 2px #f36563;
 }
-
 .sectionCalcul {
   margin-bottom: 5px;
   border-radius: 20px;
@@ -316,26 +321,22 @@ input {
   flex-wrap: nowrap;
   justify-content: center;
 }
-
 .form-container.charge.span {
   font-size: 15px;
   width: 400px;
   border-radius: 10px;
   background-repeat: no-repeat;
 }
-
 #colorblue,
 .form-field {
   text-emphasis-color: blue;
   margin-top: 24px;
 }
-
 .sectionCalcul.result {
   margin-bottom: 20px;
   border-color: rgb(255, 242, 0);
   background-image: url(images/marbre.jpg);
 }
-
 #colorRed {
   color: red;
   border-color: red;
@@ -344,7 +345,6 @@ input {
   border-bottom-color: red;
   border-left-color: red;
 }
-
 #colorBleu {
   color: rgb(106, 0, 255);
   border-color: blue;
@@ -353,7 +353,6 @@ input {
   border-bottom-color: blue;
   border-left-color: blue;
 }
-
 #colorGreen {
   color: rgb(6, 115, 29);
   border-color: green;
@@ -362,91 +361,75 @@ input {
   border-bottom-color: green;
   border-left-color: green;
 }
-
 .radio {
   width: 20px;
   height: 15;
 }
-
 .résultaNet {
   font-size: 20px;
   height: 25px;
   color: green;
 }
-
 .Tax {
   border-radius: 8px;
   font-size: 20px;
   height: 25px;
   color: red;
 }
-
 .form-container {
   border-radius: 8px;
 }
-
 .résultaBrut {
   font-size: 20px;
   height: 25px;
   color: #ae0a0f;
 }
-
 input.buttonRadio {
   font-size: 15px;
   width: 75px;
   height: 12px;
 }
-
 p > span {
   font-size: 15px;
   text-align: left;
 }
-
 #resultaBrut {
   color: blue;
   border: solid 3px;
   margin: 5px;
   padding: 10px;
 }
-
 #resultaNet {
   color: green;
   border: solid 3px;
   margin: 5px;
   padding: 10px;
 }
-
 #Adeduire {
   color: rgb(116, 8, 30);
   border: solid 3px;
   margin: 5px;
   padding: 10px;
 }
-
 .form-field {
   text-align: center;
 }
-
 #textColorResultaBrut {
   text-align: center;
   color: blue;
 }
-
 #textColorAdeduire {
   text-align: center;
   color: rgb(116, 8, 30);
 }
-
 #textColorResultaNet {
   text-align: center;
   color: green;
 }
-
 .totalCharge {
   width: 500px;
   border: solid 1px rgb(37, 3, 115);
 }
-
 #chMaketPpace {
   margin-bottom: 5px;
   margin-left: auto;
